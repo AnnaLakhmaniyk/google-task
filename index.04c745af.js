@@ -1,0 +1,2 @@
+const e=document.querySelector("#btnEl"),l=document.querySelector("#btnSearch"),t=document.querySelector("#logo-google"),c=document.querySelector("#logo-makiage");e.addEventListener("click",(function(){t.classList.add("visually-hidden"),c.classList.remove("visually-hidden")})),l.addEventListener("click",(function(){t.classList.remove("visually-hidden"),c.classList.add("visually-hidden")}));
+//# sourceMappingURL=index.04c745af.js.map
