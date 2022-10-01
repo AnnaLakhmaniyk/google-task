@@ -1,0 +1,123 @@
+.content {
+  min-width: 320px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 122px 40px 0 40px;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.google-logo {
+  margin-bottom: 38px;
+}
+.form {
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  margin-bottom: 34px;
+
+  &__input {
+    font-size: 16px;
+    height: 45px;
+    border: 0.8px solid rgba(32, 33, 36, 0.28);
+    border-radius: 22px;
+    padding-right: 52px;
+    padding-left: 44px;
+    transition: box-shadow 250ms c-bezier(0.4, 0, 0.2, 1);
+  }
+  &__input:hover,
+  &__input:focus {
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+  }
+
+  &__icon {
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    height: 24px;
+    width: 24px;
+  }
+  &__icon-button {
+    position: absolute;
+    display: flex;
+    right: 1px;
+    top: 10px;
+  }
+  &__btn-search {
+    background-color: transparent;
+    background-size: 21px 21px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    height: 100%;
+    pointer-events: auto;
+  }
+}
+
+.container-button {
+  display: flex;
+  justify-content: center;
+  justify-content: center;
+}
+.button {
+  font-size: 13px;
+  line-height: 1.33;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  padding: 8px 10px;
+  background-color: rgb (241, 243, 244);
+  margin-bottom: 32px;
+  transition: box-shadow 250ms c-bezier(0.4, 0, 0.2, 1);
+}
+.button:hover,
+.button:focus {
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+}
+.button:not(:last-child) {
+  margin-right: 10px;
+}
+.text {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-size: 13px;
+  line-height: 1.15;
+}
+.link {
+  margin-left: 3px;
+  color: #1a0dab;
+  cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .content {
+    max-width: 768px;
+  }
+  .form__input {
+    min-width: 449px;
+  }
+  .button {
+    font-size: 15px;
+    width: 185px;
+  }
+
+  .text {
+    font-size: 15px;
+  }
+
+  .button:not(:last-child) {
+    margin-right: 15px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .content {
+    max-width: 1280px;
+  }
+  .form__input {
+    min-width: 561px;
+  }
+}
